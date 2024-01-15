@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fitxa>
+  <nom>Llenguatge C</nom>
+  <info-html>
+    <![CDATA[
+      <h1>LLENGUATGES DE PROGRAMACIÓ</h1>
+      <hr>
+      <a href="url">C</a>
+    ]]>
+  </info-html>
+</fitxa>

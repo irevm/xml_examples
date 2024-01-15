@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fitxes [
+  <!ENTITY poblacio "Tejeda de Tiétar, Cáceres">
+]>
+<fitxes>
+  <fitxa>
+    <empresa nom="Tractores Toledo"></empresa>
+    <adreca>&poblacio;</adreca>
+  </fitxa>
+  <fitxa>
+    <empresa nom="Congelados Kurylenko"></empresa>
+    <adreca>&poblacio;</adreca>
+  </fitxa>
+</fitxes>

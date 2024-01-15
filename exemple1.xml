@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animal>
+  <nom>Tauró blanc</nom>
+  <nomcientific>Carcharodon carcharias</nomcientific>
+  <familia>Lamnidae</familia>
+  <estatdeconservacio>Vulnerable</estatdeconservacio>
+</animal>

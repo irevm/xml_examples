@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE avis [
+  <!ELEMENT avis (de, per_a, missatge)>
+  <!ELEMENT de (#PCDATA)>
+  <!ELEMENT per_a (#PCDATA)>
+  <!ELEMENT missatge (#PCDATA)>
+]>
+<avis>
+  <de>David</de>
+  <per_a>Rosalía</per_a>
+  <missatge>Demà ens trobem a classe a les 10.</missatge>
+</avis>

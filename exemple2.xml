@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+  <animal id="1">
+    <nom>Tauró blanc</nom>
+    <nomcientific>Carcharodon carcharias</nomcientific>
+  </animal>
+  <animal id="2">
+    <nom>Tonyina vermella</nom>
+    <nomcientific>Thunnus thynnus</nomcientific>
+  </animal>
+</animals>

@@ -1,0 +1,4 @@
+<!ELEMENT avis (de, per_a, missatge)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT per_a (#PCDATA)>
+<!ELEMENT missatge (#PCDATA)>
