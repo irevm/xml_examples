@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="missatge">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="de" type="xs:string"/>
+        <xs:element name="per_a">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="p"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="missatge">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="p"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="p" type="xs:string">
+
+  </xs:element>
+</xs:schema>

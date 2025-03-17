@@ -7,14 +7,15 @@
   <!ELEMENT llengues (llengua*)>
   <!ELEMENT llengua (#PCDATA)>
   <!ATTLIST llengua identificador ID #REQUIRED>
+  <!ATTLIST idioma nouID NMTOKEN #IMPLIED>
   <!ATTLIST idioma nivell (baix | mitjà | alt) "mitjà">
   <!ATTLIST idioma codiPais IDREF #REQUIRED>
 ]>
 <cv>
   <nom>Desmond Miles</nom>
   <idiomes>
-    <idioma codiPais="fr" nivell="baix">Francès</idioma>
-    <idioma codiPais="en">Anglès</idioma>
+    <idioma codiPais="fr" nivell="baix" nouID="france">Francès</idioma>
+    <idioma codiPais="en">Anglès</idioma> 
     <idioma codiPais="it">Italià</idioma>
   </idiomes>
   <llengues>
