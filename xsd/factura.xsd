@@ -6,11 +6,24 @@
         <xs:element name="numero" type="xs:string"/>
         <xs:element name="client" type="client"/>
         <xs:element name="concepte" type="concepte" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="impost">
+        <!--Per definir elements amb atributs i contingut de tipus text hi ha diferents opcions. Una, és emprar mixed="true", però d'aquesta manera no podem validar el tipus del text-->
+        <!-- <xs:element name="impost">
           <xs:complexType mixed="true">
             <xs:attribute name="nom" type="xs:string"/>
           </xs:complexType>
+        </xs:element> -->
+
+        <!--Una altra opció és emprar un simpleContent. Bàsicament és com definir un tipus simple però fer una extensió i afegir-hi un atribut, fet que el converteix en element compost. -->
+        <xs:element name="impost">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="nom" type="xs:string"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
         </xs:element>
+
         <xs:element name="totalFactura" type="totalFactura"/>
       </xs:sequence>
     </xs:complexType>

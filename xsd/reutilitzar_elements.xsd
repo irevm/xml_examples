@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="missatge">
+  <xs:element name="web">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="de" type="xs:string"/>
-        <xs:element name="per_a">
+        <xs:element name="header" type="xs:string"/>
+        <xs:element name="main">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="p"/>
+              <xs:element ref="p" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="missatge">
+        <xs:element name="footer">
           <xs:complexType>
             <xs:sequence>
-              <xs:element ref="p"/>
+              <xs:element ref="p" minOccurs="0"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -22,7 +22,6 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:element name="p" type="xs:string">
-
-  </xs:element>
+  <!--Per a poder reutilitzar un element s'ha de definir de manera global-->
+  <xs:element name="p" type="xs:string"/>
 </xs:schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="reutilitzar_elements.xsd">
+  <header>Títol web</header>
+  <main>
+    <p>Part principal</p>
+    <p>Segon paràgraf</p>
+  </main>
+  <footer>
+    <p>Copyright</p>
+    <!--Només es permet una sola etiqueta <p> dins el <footer>-->
+    <!--<p>Segon paràgraf footer</p>-->
+  </footer>
+</web>
