@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="atributos">
+  <xs:element name="atributs">
     <xs:complexType>
       <xs:sequence>
-        <!-- Elemento que permite el atributo global -->
-        <xs:element name="permitido" maxOccurs="unbounded">
+        <!-- Element que permet l'atribut global -->
+        <xs:element name="permes" maxOccurs="unbounded">
           <xs:complexType>
             <xs:complexContent>
               <xs:extension base="baseType" />
@@ -12,12 +12,12 @@
           </xs:complexType>
         </xs:element>
 
-        <!-- Elemento que prohíbe el atributo global -->
-        <xs:element name="prohibido">
+        <!-- Element que prohibeix l'atribut global -->
+        <xs:element name="prohibit">
           <xs:complexType>
             <xs:complexContent>
               <xs:extension base="baseType">
-                <xs:attribute name="globalAttr" use="prohibited" />
+                <xs:attribute name="global_attr" use="prohibited" />
               </xs:extension>
             </xs:complexContent>
           </xs:complexType>
@@ -27,9 +27,9 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- Tipo base con un atributo globalmente permitido -->
+  <!-- Tipus base amb un atribut globalment permès -->
   <xs:complexType name="baseType">
-    <xs:attribute name="globalAttr" type="xs:string" use="optional" />
+    <xs:attribute name="global_attr" type="xs:string" use="optional" />
   </xs:complexType>
   
 </xs:schema>
