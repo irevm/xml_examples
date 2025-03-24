@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="notes">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="programacio" type="tipus_nota"/>
+        <xs:element name="lmgsi" type="tipus_nota"/>
+        <xs:element name="bd" type="tipus_nota"/>
+        <xs:element name="sin" type="tipus_nota"/>
+        <xs:element name="ed" type="tipus_nota"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tipus_nota">
+    <xs:simpleContent>
+      <xs:extension base="xs:positiveInteger">
+        <xs:attribute name="aprovat" type="xs:boolean"></xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>

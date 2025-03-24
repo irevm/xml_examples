@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="notes.xsd">
+  <programacio aprovat="true">5</programacio>
+  <lmgsi aprovat="true">10</lmgsi>
+  <bd aprovat="false">4</bd>
+  <sin aprovat="true">5</sin>
+  <ed aprovat="true">5</ed>
+</notes>
